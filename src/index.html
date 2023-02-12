@@ -8,12 +8,17 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/x-scss" href="./scss/app.css"/>
+    <script type="module" src="./js/app.js"></script>
   </head>
   <body>
     <div class="main">
       <form class="form">
         <!-- input go here -->
-        <button class="button">Save</button>
+        <input class="input" name="name" type="text" required placeholder="Name" minlength="20"/>
+        <input class="input" name="contributers" type="number" required placeholder="Numbers of contributers" min="1" max="100"/>
+        <input class="input" name="max_branches" type="number" required placeholder="Max branches" min="1" max="100"/>
+        <button class="input" class="button">Save</button>
       </form>
     </div>
   </body>
